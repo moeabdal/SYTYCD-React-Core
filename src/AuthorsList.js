@@ -24,6 +24,7 @@ class AuthorsList extends Component {
 
     return (
       <div>
+        {console.log(this.state.filteredAuthors)}
         <h3>Authors</h3>
         <SearchBar onChange={this.filterAuthors} />
         <div className="row">{authorCards}</div>
